@@ -1,13 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    float a;
-    float b;
-    float c;
-    printf("請輸入三角形的底(cm):");
-    scanf("%f",&a);
-    printf("請輸入三角形的高(cm):");
-    scanf("%f",&b);
-   printf("三角形面積為:%.2f",c=a*b/2);
-  return 0;
+    int livingroom=9;
+    int bedroom=5;
+    int kitchen=0;
+    int status=13;
+
+
+    
+    printf("目前客廳設備：%d\n",status&livingroom);
+    printf("目前臥室設備：%d\n",status&bedroom);  
+    printf("目前廚房設備：%d\n",status&kitchen);
+    printf("廚房切換後目前設備狀態:%d\n",status^kitchen);
+    return 0;
 }
