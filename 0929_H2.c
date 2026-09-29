@@ -1,16 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int livingroom=9;
-    int bedroom=5;
-    int kitchen=0;
-    int status=13;
+   int hp=100;
+   hp-=30;
+   hp+=20;
+   hp-=15;
+   printf("最後生命值:%d",hp);
+   return 0;
 
-
-    
-    printf("目前客廳設備：%d\n",status&livingroom);
-    printf("目前臥室設備：%d\n",status&bedroom);  
-    printf("目前廚房設備：%d\n",status&kitchen);
-    printf("廚房切換後目前設備狀態:%d\n",status^kitchen);
-    return 0;
 }
