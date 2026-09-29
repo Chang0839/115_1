@@ -1,16 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int livingroom=9;
-    int bedroom=5;
-    int kitchen=0;
-    int status=13;
+   int s=5;
+   int p=1<<2;
+   int o=1<<3;
+   printf("停車場的權限：%d\n",p);
+   printf("學生有無停車場權限：%d\n",s&p); 
+   printf("學生有無老師辦公室權限：%d\n",s&o); 
+   
 
-
-    
-    printf("目前客廳設備：%d\n",status&livingroom);
-    printf("目前臥室設備：%d\n",status&bedroom);  
-    printf("目前廚房設備：%d\n",status&kitchen);
-    printf("廚房切換後目前設備狀態:%d\n",status^kitchen);
     return 0;
 }
