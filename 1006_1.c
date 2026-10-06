@@ -2,14 +2,14 @@
 int main()
 {
     int score;
-    int attendence;
+    int attendance;
     printf("請輸入成績(分)：");
     scanf("%d",&score);
-    printf("請輸入出席率(%)：");
-    scanf("%d",&attendence);
     if(score>=60)
     {
-    if(attendence>=80) 
+        printf("請輸入出席率(%)：");
+    scanf("%d",&attendance);
+    if(attendance>=80) 
     {
         printf("課程通過");
     }
