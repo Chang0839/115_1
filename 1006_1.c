@@ -10,7 +10,7 @@ int main()
     }
     else
     {
-    printf("身高不足，無法搭乘雲霄飛車1");
+    printf("身高不足，無法搭乘雲霄飛車");
     }
     return 0;
 }
