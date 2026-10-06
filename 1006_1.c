@@ -1,26 +1,29 @@
 #include<stdio.h>
 int main()
 {
-    int score;
-    int attendance;
-    printf("請輸入成績(分)：");
-    scanf("%d",&score);
-    if(score>=60)
+    int login;
+    int accont;
+    int money;
+    int black;
+    printf("請輸入登入狀態(1:登入0:未登入)：");
+    scanf("%d",&login);
+    if(login==1)
     {
-        printf("請輸入出席率(%)：");
-    scanf("%d",&attendance);
-    if(attendance>=80) 
+    printf("請輸入帳戶餘額:");
+    scanf("%d",&accont);
+    printf("請輸入提款金額:");
+    scanf("%d",&money);
+    printf("請輸入黑名單狀態(1:是0:否):");
+    scanf("%d",&black);
+    if(accont >=money&&black==0)
+    printf("可以提款");
+
+    }
+    else 
     {
-        printf("課程通過");
+    printf("不可提款");
+   
     }
-    else
-    {
-    printf("成績不及格");
-    }
-    }
-    else
-    {
-    printf("成績不及格");
-    }
+    
     return 0;
 }
