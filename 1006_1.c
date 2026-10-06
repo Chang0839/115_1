@@ -1,16 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int height;
-    printf("請輸入身高(cm):");
-    scanf("%d",&height);
-    if(height>=120)
+    int score;
+    int attendence;
+    printf("請輸入成績(分)：");
+    scanf("%d",&score);
+    printf("請輸入出席率(%)：");
+    scanf("%d",&attendence);
+    if(score>=60)
     {
-    printf("可以搭乘雲霄飛車");
+    if(attendence>=80) 
+    {
+        printf("課程通過");
     }
     else
     {
-    printf("身高不足，無法搭乘雲霄飛車");
+    printf("成績不及格");
+    }
+    }
+    else
+    {
+    printf("成績不及格");
     }
     return 0;
 }
