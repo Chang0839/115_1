@@ -8,11 +8,11 @@ if(age<=6)
 {
     printf("免費\n");
 }
-else if(age>=6&age<=12)
+else if(age<=12)
 {
     printf("兒童票\n");
 }
-else if(age>=13&age<=64)
+else if(age<=64)
 {
     printf("全票\n");
 }
