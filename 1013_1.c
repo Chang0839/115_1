@@ -1,24 +1,26 @@
 #include<stdio.h>
 int main()
 {
-int age;
-printf("請輸入年齡:");
-scanf("%d",&age);
-if(age<=6)
+int drink;
+printf("產品選項有:\n1. 紅茶 30元\n2. 綠茶 35元\n3. 奶茶 50元\n4. 果汁 45元\n請輸入選項:");
+scanf("%d",&drink);
+switch(drink)
 {
-    printf("免費\n");
+    case 1:
+    printf("您選擇紅茶，價格30元\n");
+    break;
+    case 2:
+    printf("您選擇綠茶，價格35元\n");
+    break;
+    case 3:
+    printf("您選擇奶茶，價格50元\n");
+    break;
+    case 4:
+    printf("您選擇果汁，價格45元\n");
+    break;
+    default:
+    printf("無此飲料選項\n");
 }
-else if(age<=12)
-{
-    printf("兒童票\n");
-}
-else if(age<=64)
-{
-    printf("全票\n");
-}
-else
-{
-    printf("敬老票\n");
-}
+
 return 0;
 }
